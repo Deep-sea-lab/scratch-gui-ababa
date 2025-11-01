@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies 📦
         run: npm i  --loglevel=info
 
+      - name: Install dependencies 📦1
+        run: npm i simple-git isomorphic-git --save --loglevel=info
+
       - name: Zip entire project 📦
         shell: pwsh
         run: Compress-Archive -Path * -DestinationPath entire-project.zip
